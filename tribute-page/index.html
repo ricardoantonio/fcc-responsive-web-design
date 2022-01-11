@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
 
@@ -17,13 +17,11 @@
   </head>
   <body>
     <main id="main">
-      <header>
+      <header class="section-hero">
         <div class="hero-container">
           <div class="hero-text-box">
-            <div class="hero-title" id="title">Ken Follett</div>
-            <div class="hero-subtitle">
-              El escritor de Los Pilares de la Tierra
-            </div>
+            <h1 class="hero-title" id="title">Ken Follett</h1>
+            <p class="hero-subtitle">El escritor de Los Pilares de la Tierra</p>
           </div>
           <figure class="hero-img-box" id="img-div">
             <img src="img/ken-follett.jpeg" alt="" id="image" />
@@ -33,32 +31,223 @@
           </figure>
         </div>
       </header>
+
       <section class="section-bio">
         <div class="container">
+          <h2 class="heading-secondary">Biografía</h2>
+          <div class="main-data">
+            <div class="main-data-col">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                class="main-data-icon"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <circle
+                  cx="128"
+                  cy="96"
+                  r="64"
+                  fill="none"
+                  stroke-miterlimit="10"
+                  stroke-width="16"
+                ></circle>
+                <path
+                  d="M31,216a112,112,0,0,1,194,0"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+              <p class="main-data-text">Kenneth Martin Follett</p>
+            </div>
+            <div class="main-data-col">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                class="main-data-icon"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="128"
+                  y1="88"
+                  x2="128"
+                  y2="64"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <path
+                  d="M128,64c46.2-16,0-56,0-56S80,48,128,64Z"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M162,126a34,34,0,0,1-68,0"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M94,126a34,34,0,0,1-33.3,34c-19.1.4-34.7-15.6-34.7-34.7V112A23.9,23.9,0,0,1,50,88H206a23.9,23.9,0,0,1,24,24v13.3c0,19.1-15.6,35.1-34.7,34.7A34,34,0,0,1,162,126"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M216,153.3V208a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V153.3"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+              <p class="main-data-text">5 de junio de 1949</p>
+            </div>
+            <div class="main-data-col">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                class="main-data-icon"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="56"
+                  y1="232"
+                  x2="200"
+                  y2="232"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <circle
+                  cx="128"
+                  cy="104"
+                  r="32"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></circle>
+                <path
+                  d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+              <p class="main-data-text">Cardiff, Gales</p>
+            </div>
+          </div>
           <p class="bio-text" id="tribute-info">
-            <strong>Kenneth Martin Follett</strong> (Cardiff, Gales; 5 de junio
-            de 1949), más conocido como Ken Follett, es un escritor británico de
-            novelas de suspense e históricas. En 1989, cambió la temática de
-            espionaje de sus novelas, pasando a escribir Los Pilares de la
-            Tierra en la que narra la construcción de una catedral gótica en el
-            siglo XII. Esta novela se mantuvo en los primeros puestos de ventas
-            en Europa durante más de 10 años. Sus siguientes novelas han tenido
-            gran éxito y ha recibido diversos premios por ellas. Algunas han
-            sido adaptadas al cine o a series de televisión.
+            Más conocido como <strong>Ken Follett,</strong> es un escritor
+            británico de novelas de suspense e históricas. En 1989, cambió la
+            temática de espionaje de sus novelas, pasando a escribir Los Pilares
+            de la Tierra en la que narra la construcción de una catedral gótica
+            en el siglo XII. Esta novela se mantuvo en los primeros puestos de
+            ventas en Europa durante más de 10 años. Sus siguientes novelas han
+            tenido gran éxito y ha recibido diversos premios por ellas. Algunas
+            han sido adaptadas al cine o a series de televisión.
           </p>
         </div>
       </section>
       <section class="section-books">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="heading-secondary">Los Pilares de la Tierra</h2>
+          <div class="books-grid">
+            <img
+              src="img/01-pilaresdelatierra.jpeg"
+              alt="Portada del libro Los Pilares de la Tierra"
+              class="book-img"
+            />
+            <div class="book-info-box">
+              <span class="book-year">1989</span>
+              <h3 class="book-title">Los Pilares de la Tierra</h3>
+              <p class="book-info">
+                Ambientada en Inglaterra en la Edad Media, en concreto en el
+                siglo XII, durante un periodo de guerra civil conocido como la
+                anarquía inglesa, entre el hundimiento del White Ship y el
+                asesinato del arzobispo Thomas Becket.
+              </p>
+            </div>
 
-        <footer class="footer">
-          <p>
-            Si tienes un poco más de tiempo, en este enlace encontrarás más
-            información sobre
-            <a href="#" id="tribute-link" target="_blank">Ken Follett</a>
-          </p>
-        </footer>
+            <img
+              src="img/02-mundosinfin.jpeg"
+              alt="Portada del libro Un Mundo Sin Fin"
+              class="book-img"
+            />
+            <div class="book-info-box">
+              <span class="book-year">2007</span>
+              <h3 class="book-title">Un Mundo Sin Fin</h3>
+              <p class="book-info">
+                Tiene lugar en la misma ciudad ficticia, Kingsbridge, pero 200
+                años después. Algunos personajes son descendientes de los de la
+                primera novela.
+              </p>
+            </div>
+
+            <img
+              src="img/03-columnadefuego.jpeg"
+              alt="Portada del libro Una Columna de Fuego"
+              class="book-img"
+            />
+            <div class="book-info-box">
+              <span class="book-year">2019</span>
+              <h3 class="book-title">Una Columna de Fuego</h3>
+              <p class="book-info">
+                Este libro es la tercera parte de la serie de Kingsbridge Los
+                Pilares de la Tierra. La primicia es la guerra de religiones que
+                se vivió en Europa a partir de 1562.
+              </p>
+            </div>
+
+            <img
+              src="img/04-tinieblasyelalba.jpeg"
+              alt="Portada del libro Las Tinieblas y el Alba"
+              class="book-img"
+            />
+            <div class="book-info-box">
+              <span class="book-year">2020</span>
+              <h3 class="book-title">Las Tinieblas y el Alba</h3>
+              <p class="book-info">
+                La pruecuela de Los Pilares de la Tierra. En este libro, Ken
+                Follett embarca al lector en un épico viaje que termina donde
+                Los pilares de la Tierra comienza.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <footer class="footer">
+        <p>
+          Si tienes un poco más de tiempo, en este enlace encontrarás más
+          información sobre
+          <a href="#" id="tribute-link" target="_blank">Ken Follett</a>
+        </p>
+        <p class="copyright">
+          Hecho por
+          <a href="https://ricardoantonio.dev" target="_blank"
+            >Ricardo Antonio</a
+          >
+          para freeCodeCamp.org
+        </p>
+      </footer>
     </main>
 
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
