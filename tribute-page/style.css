@@ -39,7 +39,8 @@ body {
   position: relative;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   font-weight: 700;
   color: var(--primary-color);
@@ -47,7 +48,8 @@ a:link, a:visited {
   transition: all 0.3s;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: var(--primary-color--light);
   border-bottom: 1px solid transparent;
 }
@@ -59,7 +61,7 @@ a:hover, a:active {
 .section-hero {
   padding: 12.8rem 3.2rem;
   background-image: linear-gradient(to top left, #225347, #296456);
-  background-color:  var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .hero-container {
@@ -97,7 +99,7 @@ a:hover, a:active {
   margin: 0 auto;
   border-radius: 11px;
 
-  box-shadow: 0 0px 16px 0 rgb(0, 0, 0,.2);
+  box-shadow: 0 0px 16px 0 rgb(0, 0, 0, 0.2);
 }
 
 .hero-img-caption {
@@ -124,7 +126,7 @@ a:hover, a:active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
-  margin-bottom:6.4rem;
+  margin-bottom: 6.4rem;
 }
 
 .main-data-col {
@@ -173,6 +175,7 @@ a:hover, a:active {
 
 .book-img {
   max-width: 60%;
+  margin: 0 auto;
 }
 
 .book-year {
@@ -180,7 +183,7 @@ a:hover, a:active {
   font-size: 6.2rem;
   font-weight: 700;
   color: #ddd;
-  margin-top:-2rem;
+  margin-top: -2rem;
   margin-bottom: 2rem;
 }
 
@@ -201,7 +204,7 @@ a:hover, a:active {
 /**************************************/
 
 .footer {
-  padding: 9.6rem 0;
+  padding: 9.6rem 3.2rem;
   text-align: center;
   font-size: 2.4rem;
   word-spacing: 2px;
@@ -210,4 +213,79 @@ a:hover, a:active {
 
 .footer p:not(last-child) {
   margin-bottom: 2.4rem;
+}
+
+/**************************************/
+/* MEDIA QUERIES */
+/**************************************/
+
+/* Bellow 1008px */
+@media (max-width: 63em) {
+  .hero-title {
+    font-size: 8.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 5.2rem;
+  }
+}
+
+/* Bellow 880px */
+@media (max-width: 55em) {
+  html {
+    font-size: 50%;
+  }
+  .footer {
+    padding: 9.6rem;
+  }
+}
+
+/* Bellow 704px */
+@media (max-width: 44em) {
+  .hero-container {
+    padding: 2rem 3.2rem;
+  }
+.hero-container{
+  grid-template-columns: 1fr;
+}
+.hero-title,
+.hero-subtitle {
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 2.4rem;
+}
+
+.hero-img-box img {
+  max-width: 75%;
+}
+.hero-img-caption{
+  position: relative;
+  text-align: center;
+}
+
+.main-data {
+  grid-template-columns: 1fr;
+}
+.main-data-col{
+  flex-direction: row;
+}
+
+.section-books {
+  padding: 0 0 4.8rem ;
+}
+
+.books-grid {
+  grid-template-columns: 1fr;
+}
+
+.book-img {
+  max-width: 40%;
+}
+
+
+.footer {
+  padding: 3.2rem;
+}
 }
