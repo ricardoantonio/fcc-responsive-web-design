@@ -57,7 +57,7 @@ a:hover, a:active {
 /**************************************/
 
 .section-hero {
-  padding: 9.6rem 3.2rem;
+  padding: 12.8rem 3.2rem;
   background-image: linear-gradient(to top left, #225347, #296456);
   background-color:  var(--primary-color);
 }
@@ -104,7 +104,7 @@ a:hover, a:active {
   font-size: 1.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--primary-color--light);
+  color: var(--primary-color--lightest);
 
   position: absolute;
   right: 0;
@@ -160,7 +160,7 @@ a:hover, a:active {
 /**************************************/
 
 .section-books {
-  padding: 4.8rem 0;
+  padding: 4.8rem 0 9.8rem 0;
 }
 
 .books-grid {
@@ -180,6 +180,7 @@ a:hover, a:active {
   font-size: 6.2rem;
   font-weight: 700;
   color: #ddd;
+  margin-top:-2rem;
   margin-bottom: 2rem;
 }
 
