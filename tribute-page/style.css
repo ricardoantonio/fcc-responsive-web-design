@@ -167,7 +167,7 @@ a:hover, a:active {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 3.2rem;
-  row-gap: 6.2rem;
+  row-gap: 7.2rem;
   align-items: center;
 }
 
