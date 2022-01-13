@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(45, 103, 129, 0.884);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-family: "Lato", sans-serif;
+}
+
+.survey-form-container {
+  max-width: 900px;
+  margin: 9.6rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: linear-gradient(#66d9e8, #3bc9db);
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  color: #042e35;
+}
+
+.form-img-box {
+  height: 40rem;
+  grid-row: 1;
+  background-image: linear-gradient(
+      rgba(102, 217, 232, 0.2),
+      rgba(59, 200, 219, 0.2)
+    ),
+    url("img/student.jpg");
+  background-size: cover;
+  background-position-x: 75%;
+}
+
+.form-text-box {
+  padding: 5.2rem;
+}
+
+.form-title {
+  font-size: 3.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.form-description {
+  margin-bottom: 4.8rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 3.2rem;
+}
+
+.form label,
+.form legend {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+}
+
+.form input::placeholder {
+  color: #aaa;
+}
+
+.form fieldset {
+  grid-column: 1 / -1;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.4rem;
+}
+
+.textarea {
+  grid-column: 1 / -1;
+}
+
+.form fieldset label {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  font-weight: 400;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.form button {
+  justify-self: end;
+  grid-column: -2;
+  font-size: 1.8rem;
+  padding: 1.2rem 4.8rem;
+  border: none;
+  background-color: #1e6b79;
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.form button:hover {
+  background-color: #237786;
+}
+
+@media (max-width: 57em) {
+  .survey-form-container {
+    margin: 1.6rem;
+  }
+}
+
+@media (max-width: 44em) {
+  html {
+    font-size: 50%;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
