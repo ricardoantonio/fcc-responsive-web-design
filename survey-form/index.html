@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="survey-form">
+      <div class="form-text-box">
+        <h1 id="title" class="form-title">¡Quiero más informacioón!</h1>
+        <p id="description" class="form-description">
+          Gracias por interesarte en nuestros cursos. Por favor, deja tus datos
+          para que nos pongamos en contacto contigo.
+        </p>
+        <form class="form" id="survey-form">
+          <div>
+            <label for="name" d="name-label">Nombre:</label>
+            <input
+              type="input"
+              id="name"
+              placeholder="John Smith"
+              name="name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" id="email-label">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="yo@ejemplo.com"
+              required
+            />
+          </div>
+          <div>
+            <label for="number" id="number-label">Edad:</label>
+            <input
+              type="number"
+              name="edad"
+              id="number"
+              min="15"
+              max="30"
+              placeholder="Entre 15y 30 años"
+            />
+          </div>
+          <div>
+            <label for="dropdown">Género:</label>
+            <select name="dropdown" id="dropdown">
+              <option value="masculino">Masculino</option>
+              <option value="femenino">femenino</option>
+              <option value="otro" selected>No especificado</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Horario de Contacto</legend>
+            <label for="mañana"
+              ><input
+                type="radio"
+                name="horario"
+                id="mañana"
+                value="mañana"
+              />Mañana</label
+            >
+            <label for="tarde"
+              ><input
+                type="radio"
+                name="horario"
+                id="tarde"
+                value="tarde"
+              />Tarde</label
+            >
+            <label for="noche"
+              ><input
+                type="radio"
+                name="horario"
+                id="noche"
+                value="noche"
+              />Noche</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>Marca los cursos en los que estás interesado</legend>
+            <label for="html"
+              ><input
+                type="checkbox"
+                name="html"
+                id="html"
+                value="html"
+              />HTML</label
+            >
+            <label for="CSS"
+              ><input
+                type="checkbox"
+                name="CSS"
+                id="CSS"
+                value="html"
+              />CSS</label
+            >
+            <label for="js"
+              ><input
+                type="checkbox"
+                name="js"
+                id="js"
+                value="js"
+              />JavaScript</label
+            >
+            <label for="Python"
+              ><input
+                type="checkbox"
+                name="Python"
+                id="python"
+                value="Python"
+              />Python</label
+            >
+          </fieldset>
+          <div>
+            <label for="comentarios">Comentarios adicionales:</label
+            ><textarea
+              name="comentarios"
+              id="comentarios"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="form-img-box"></div>
+    </div>
+  </body>
+</html>
