@@ -119,6 +119,7 @@ body {
   color: #ffffff;
   font-weight: 700;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .form button:hover {
