@@ -102,8 +102,7 @@ iframe {
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: var(--primary-color--lightest);
 }
 
 .section-title {
