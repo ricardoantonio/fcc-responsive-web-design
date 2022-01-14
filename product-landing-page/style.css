@@ -361,6 +361,7 @@ iframe {
 .btn.btn--form {
   background-color: var(--primary-color);
   color: #fff;
+  cursor: pointer;
 }
 
 .btn--form:hover {
