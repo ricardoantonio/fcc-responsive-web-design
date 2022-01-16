@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Introducción a JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar" class="navbar">
+        <header class="nav-title-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 630 630"
+            class="nav-title-icon"
+          >
+            <rect width="630" height="630" fill="#f7df1e" />
+            <path
+              d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"
+            />
+          </svg>
+          <p class="nav-title">Introducción a JavaScript</p>
+        </header>
+        <p class="nav-description">Contenido:</p>
+        <ol class="content-list">
+          <li>
+            <a href="#Qué_es_JavaScript" class="nav-link">Qué es JavaScript</a>
+          </li>
+          <li>
+            <a href="#Variables" class="nav-link">Variables</a>
+          </li>
+          <li>
+            <a href="#Tipos_de_variables" class="nav-link"
+              >Tipos de variables</a
+            >
+          </li>
+          <li>
+            <a href="#Comentarios" class="nav-link">Comentarios</a>
+          </li>
+          <li>
+            <a href="#Control_de_flujo" class="nav-link">Control de flujo</a>
+          </li>
+        </ol>
+      </nav>
+      <main id="main-doc" class="doc-container">
+        <header>
+          <h1 class="heading-primary">Introducción a JavaScript</h1>
+        </header>
+        <section class="main-section" id="Qué_es_JavaScript">
+          <header>
+            <h2 class="heading-secondary">Qué es JavaScript</h2>
+          </header>
+          <div>
+            <p>
+              JavaScript es un lenguaje de scripting multiplataforma y orientado
+              a objetos. Es un lenguaje pequeño y liviano. Dentro de un ambiente
+              de host, JavaScript puede conectarse a los objetos de su ambiente
+              y proporcionar control programático sobre ellos.
+            </p>
+            <p>
+              JavaScript contiene una librería estándar de objetos, tales como
+              Array, Date, y Math, y un conjunto central de elementos del
+              lenguaje, tales como operadores, estructuras de control, y
+              sentencias. El núcleo de JavaScript consiste en características
+              comunes de programación que te permiten hacer cosas como:
+            </p>
+            <ul>
+              <li>Almacenar valores útiles dentro de variables.</li>
+              <li>
+                Las operaciones escritas en formato de texto (Conocidas como
+                "Strings" en lenguaje de programación).
+              </li>
+              <li>
+                Para hacer funcionar el código en respuesta a algunos eventos
+                que están ocurriendo en la página web.
+              </li>
+              <li>¡Y muchas más cosas!</li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-section" id="Variables">
+          <header>
+            <h2 class="heading-secondary">Variables</h2>
+          </header>
+          <div>
+            <p>
+              Una variable es un contenedor para un valor, como un número que
+              podríamos usar en una suma, o una cadena que podríamos usar como
+              parte de una oración. Pero una cosa especial acerca de las
+              variables es que el valor que contienen puede cambiar.
+            </p>
+            <h3 class="heading-tertiary">Declarando una variable</h3>
+            <p>
+              Para usar una variable, primero tienes que crearla, a esto se le
+              llama declarar una variable. Para hacer esto, escribimos la
+              palabra clave <code>var</code> o <code>let</code> seguida del
+              nombre que le quieres poner a la variable:
+            </p>
+            <pre><code>
+    let myName;
+    let myAge;
+            </code></pre>
+            <p>Aquí estamos creando dos variable llamadas myName y myAge.</p>
+          </div>
+        </section>
+        <section class="main-section" id="Tipos_de_variables">
+          <header>
+            <h2 class="heading-secondary">Tipos de variables</h2>
+          </header>
+          <div>
+            <p>
+              Hay distintos tipos de datos que se puede almacenar en variables.
+              En esta sección, los veremos de manera breve.
+            </p>
+            <ul>
+              <li>
+                <strong>Números:</strong> Puede almacenar números en las
+                variables, ya sean números enteros como 30 (también llamados
+                integers) números decimales como 2.456 (también llamados
+                floats).
+              </li>
+              <li>
+                <strong>String:</strong> Los Strings son piezas de texto. Cuando
+                asignas a una variable un String, debe encerrarlo entre comillas
+                simples ( ' ' ) o dobles ( " " ), de lo contrario Javascript lo
+                interpretará como si se tratase del nombre de otra variable.
+              </li>
+              <li>
+                <strong>Booleanos:</strong> Los Booleanos son valores de
+                verdadero o falso — pueden tener 2 valores, true o false
+                respectivamente. Generalmente se usan en condicionales, después
+                de lo cual el código se ejecuta según corresponda.
+              </li>
+              <li>
+                <strong>Arrays:</strong> Un array es un objeto que contiene
+                varios elementos encerrados entre corchetes y separados por
+                comas.
+              </li>
+              <li>
+                <strong>Objetos:</strong> En programación, un objeto es una
+                estructura de código que modela o representa a un objeto de la
+                vida real. Puedes tener un objeto que represente a una caja que
+                contenga datos sobre su ancho, largo y alto, o podrías tener un
+                objeto que represente a una persona, y contenga datos sobre su
+                nombre, altura, peso, que idioma habla, cómo saluda en éste, y
+                más.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-section" id="Comentarios">
+          <header>
+            <h2 class="heading-secondary">Comentarios</h2>
+          </header>
+          <div>
+            <p>
+              La sintaxis de comentarios es la misma como en C++ y en muchos
+              otros lenguajes:
+            </p>
+            <pre><code>
+    // en una sola línea
+    
+    /* este es un comentario 
+       multilínea
+    */
+            </code></pre>
+          </div>
+        </section>
+        <section class="main-section" id="Control_de_flujo">
+          <header>
+            <h2 class="heading-secondary">Control de flujo</h2>
+          </header>
+          <div>
+            <p>
+              Javascript soporta un conjunto compacto de sentencias,
+              específicamente para el manejo de flujo, que puedes usar para
+              incorporar mayor interactividad a tus aplicaciones.
+            </p>
+            <h3 class="heading-tertiary">Sentencias condicionales</h3>
+            <p>
+              Una sentencia condicional es un conjunto de comandos que se
+              ejecutan si una condición es verdadera. JavaScript soporta dos
+              sentencias condicionales: <code>if...else</code> y
+              <code>switch</code>.
+            </p>
+            <p>
+              Se utiliza la sentencia if para comprobar si la condición lógica
+              es verdadera. Se utiliza la opción else para ejecutar un sentencia
+              si la condición es falsa. A continuación se muestra un ejemplo de
+              <code>if...else</code>:
+            </p>
+            <pre><code>
+    if (condición) {
+      sentencia_1;
+    } else { 
+      sentencia_2;
+    }
+            </code></pre>
+            <p>
+              Aquí la condición puede ser cualquier expresión que se evalúa a
+              true o false. Consultar Boolean para una explicación de como se
+              evalúa true y false. Si la condición es verdadera, se ejecuta
+              sentencia_1; de lo contrario, se ejecuta sentencia_2. La
+              sentencia_1 y la sentencia_2 pueden ser cualquier sentencia,
+              incluyendo otras sentencias anidadas en <code>if</code>.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          Fuente:
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+            >MDN web docs</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
+</html>
